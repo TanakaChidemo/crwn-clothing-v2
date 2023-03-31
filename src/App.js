@@ -1,43 +1,40 @@
+
+
+import Directory from './components/directory/directory.component';
+
 const App = () => {
+
+  const categories = [
+    {
+      "id": 1,
+      "title": "hats",
+      "imageUrl": "https://res.cloudinary.com/diclvamvr/image/upload/v1676475467/mens-clothing-set-boots-watch-260nw-1427016581.jpg_bw1dkb.webp"
+    },
+    {
+      "id": 2,
+      "title": "jackets",
+      "imageUrl": "https://res.cloudinary.com/diclvamvr/image/upload/v1676475467/mens-clothing-set-boots-watch-260nw-1427016581.jpg_bw1dkb.webp"
+    },
+    {
+      "id": 3,
+      "title": "sneakers",
+      "imageUrl": "https://res.cloudinary.com/diclvamvr/image/upload/v1676475467/sneaker-aging-lead-1626192736_yfvpew.jpg"
+    },
+    {
+      "id": 4,
+      "title": "womens",
+      "imageUrl": "https://res.cloudinary.com/diclvamvr/image/upload/v1676475467/womens-istockphoto-1208148708-612x612_eazbbh.jpg"
+    },
+    {
+      "id": 5,
+      "title": "mens",
+      "imageUrl": "https://res.cloudinary.com/diclvamvr/image/upload/v1676475467/mens-clothing-set-boots-watch-260nw-1427016581.jpg_bw1dkb.webp"
+    }
+  ]
+
   return (
-    <div className='categories-container'>
-      <div className='category-container'>
-        {/* <img /> */}
-        <div className='category-body-container'>
-          <h2>Hats</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
-      <div className='category-container'>
-        {/* <img /> */}
-        <div className='category-body-container'>
-          <h2>Jackets</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
-      <div className='category-container'>
-        {/* <img /> */}
-        <div className='category-body-container'>
-          <h2>Sneakers</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
-      <div className='category-container'>
-        {/* <img /> */}
-        <div className='category-body-container'>
-          <h2>Womens</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
-      <div className='category-container'>
-        {/* <img /> */}
-        <div className='category-body-container'>
-          <h2>Mens</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
-    </div>
+    <Directory categories={categories}/>
   );
-};
+  };
 
 export default App;
